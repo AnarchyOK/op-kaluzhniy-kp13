@@ -5,18 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d"
-        Title="База даних студентів" Height="295.537" Width="800" Background="#FFF59292" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
-    <Grid Background="#FFB2CDCA">
+        Title="База даних студентів" Height="348.87" Width="800" Background="#FFF59292" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="White">
         <Label Content="База даних студентів" Margin="274,10,269,0" VerticalAlignment="Top" Height="39" Width="249" HorizontalAlignment="Center" FontFamily="Forte" FontSize="20" Foreground="Black" HorizontalContentAlignment="Center"/>
-        <Button x:Name="GoToMainWin" Content="До головного вікна" HorizontalAlignment="Left" Margin="547,199,0,0" VerticalAlignment="Top" Width="206" Height="35" Background="#FFE46060" Click="GoToMainWin_Click"/>
-        <TextBox x:Name="TB1" HorizontalAlignment="Left" Height="35" Margin="19,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"  Text="Введіть ID..." />
-        <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="35" Margin="19,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Text="Введіть ПІБ..."/>
-        <TextBox x:Name="TB3" HorizontalAlignment="Left" Height="35" Margin="19,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Text="Введіть спеціальність..."/>
-        <TextBox x:Name="TB4" HorizontalAlignment="Left" Height="35" Margin="19,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Text="Введіть курс..." />
-        <TextBox x:Name="Delete" HorizontalAlignment="Left" Height="35" Margin="547,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Text="Введіть ID..."/>
-        <Button Content="Записати" HorizontalAlignment="Left" Height="34" Margin="239,200,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
+        <Button x:Name="GoToMainWin" Content="До головного вікна" HorizontalAlignment="Left" Margin="550,248,0,0" VerticalAlignment="Top" Width="206" Height="35" Background="#FFE46060" Click="GoToMainWin_Click"/>
+        <TextBox x:Name="TB1" HorizontalAlignment="Left" Height="35" Margin="19,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Background="White" />
+        <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="35" Margin="19,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <TextBox x:Name="TB3" HorizontalAlignment="Left" Height="35" Margin="19,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <TextBox x:Name="TB4" HorizontalAlignment="Left" Height="35" Margin="19,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" />
+        <TextBox x:Name="Delete" HorizontalAlignment="Left" Height="35" Margin="547,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206"/>
+        <Button Content="Записати" HorizontalAlignment="Left" Height="34" Margin="242,249,0,0" VerticalAlignment="Top" Width="144" Click="Button_Click"/>
         <Button Content="Видалити" HorizontalAlignment="Left" Height="34" Margin="547,94,0,0" VerticalAlignment="Top" Width="206" Click="Button_Click_1"/>
-        <Button Content="Очистити базу даних" HorizontalAlignment="Left" Height="34" Margin="388,199,0,0" VerticalAlignment="Top" Width="154" Click="Button_Click2"/>
+        <Button Content="Очистити базу даних" HorizontalAlignment="Left" Height="34" Margin="391,249,0,0" VerticalAlignment="Top" Width="154" Click="Button_Click2"/>
+        <Label Content="Введіть ID" HorizontalAlignment="Left" Height="28" Margin="19,31,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Введіть ПІБ" HorizontalAlignment="Left" Height="28" Margin="19,94,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Введіть спеціальність" HorizontalAlignment="Left" Height="28" Margin="19,157,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Введіть курс" HorizontalAlignment="Left" Height="28" Margin="19,220,0,0" VerticalAlignment="Top" Width="183"/>
+        <Label Content="Введіть ID для видалення" HorizontalAlignment="Left" Height="28" Margin="547,31,0,0" VerticalAlignment="Top" Width="183"/>
 
     </Grid>
 </Window>

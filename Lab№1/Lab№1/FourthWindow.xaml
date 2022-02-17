@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:FirstWPFApp"
         mc:Ignorable="d"
         Title="Info" Height="306" Width="621" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF959595" Cursor="Arrow">
+    <Grid Background="White" Cursor="Arrow">
         <Label Content="Автор: Калюжний Олександр Петрович&#xA;студент 1-го курсу&#xA;група КП-13&#xD;&#xA;2022©" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="143" Margin="47,26,0,0" VerticalAlignment="Top" Width="483" FontSize="24" Cursor="IBeam">
             <Label.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
