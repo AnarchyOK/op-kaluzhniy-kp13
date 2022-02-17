@@ -1,0 +1,21 @@
+﻿<Window x:Name="MainWindow1" x:Class="FirstWPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d"
+        Title="Перший WPF-додаток" Foreground="#FFE6C0C0" Visibility="Visible" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Width="630" Height="430" Background="White" Icon="Icon1.ico">
+    <Grid Background="#FF258CBB">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="624"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ExitBtn" Content="Вихід" HorizontalAlignment="Right" Margin="0,0,176,24" VerticalAlignment="Bottom" Width="267" Height="50" Background="#FFFF6C40" Cursor="Hand" Click="ExitBtn_Click"/>
+        <Button x:Name="Win1" Content="База даних студентів" Margin="0,0,176,276" Click="Win1_Click" AutomationProperties.Name="Win1" HorizontalAlignment="Right" Width="267" Height="54" VerticalAlignment="Bottom" Background="#FF2C9ED3" Cursor="Hand"/>
+        <Button x:Name="Win2" Content="Хрестики-Нулики" HorizontalAlignment="Right" Height="54" Margin="0,0,176,217" VerticalAlignment="Bottom" Width="267" Click="Win2_Click" AutomationProperties.Name="Win2" Background="#FF2C9ED3" Cursor="Hand"/>
+        <Button x:Name="Win3" Content="Калькулятор" HorizontalAlignment="Right" Height="54" Margin="0,0,176,158" VerticalAlignment="Bottom" Width="267" Click="Win3_Click" AutomationProperties.Name="Win3" Background="#FF2C9ED3" Cursor="Hand"/>
+        <Button x:Name="Win4" Content="Автор" HorizontalAlignment="Right" Height="54" Margin="0,0,176,99" VerticalAlignment="Bottom" Width="267" Click="Win4_Click" AutomationProperties.Name="Win4" Background="#FF2C9ED3" Cursor="Hand"/>
+        <Label Content="ГОЛОВНЕ ВІКНО" HorizontalAlignment="Left" Margin="227,22,0,0" VerticalAlignment="Top" Width="180" Height="44" FontFamily="Forte" IsEnabled="False" Cursor="Arrow" FontSize="20" Background="#00000000" Foreground="#FF0C092C" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</Window>

@@ -1,0 +1,268 @@
+﻿<Window x:Class="FirstWPFApp.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstWPFApp"
+        mc:Ignorable="d"
+        Title="Хрестики-Нолики" Height="535.585" Width="800" Background="White" WindowStartupLocation="CenterScreen" >
+    <Grid Background="White" HorizontalAlignment="Left" Width="790">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="GoToMainWin" Content="До головного вікна" HorizontalAlignment="Left" Margin="535,400,0,0" VerticalAlignment="Top" Width="217" Height="61" Background="Black" Click="GoToMainWin_Click" Foreground="White"/>
+        <ComboBox x:Name="C11" HorizontalAlignment="Left" Height="80" Margin="48,41,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C11_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C12" HorizontalAlignment="Left" Height="80" Margin="133,41,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C12_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C13" HorizontalAlignment="Left" Height="80" Margin="218,41,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C13_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C14" HorizontalAlignment="Left" Height="80" Margin="303,41,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C14_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C15" HorizontalAlignment="Left" Height="80" Margin="388,41,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C15_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C21" HorizontalAlignment="Left" Height="80" Margin="48,126,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C21_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C22" HorizontalAlignment="Left" Height="80" Margin="133,126,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C22_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C23" HorizontalAlignment="Left" Height="80" Margin="218,126,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C23_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C24" HorizontalAlignment="Left" Height="80" Margin="303,126,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C24_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C25" HorizontalAlignment="Left" Height="80" Margin="388,126,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C25_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C31" HorizontalAlignment="Left" Height="80" Margin="48,211,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C31_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C32" HorizontalAlignment="Left" Height="80" Margin="133,211,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C32_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C33" HorizontalAlignment="Left" Height="80" Margin="218,211,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C33_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C34" HorizontalAlignment="Left" Height="80" Margin="303,211,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C34_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C35" HorizontalAlignment="Left" Height="80" Margin="388,211,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C35_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C41" HorizontalAlignment="Left" Height="80" Margin="48,296,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C41_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C42" HorizontalAlignment="Left" Height="80" Margin="133,296,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C42_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C43" HorizontalAlignment="Left" Height="80" Margin="218,296,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C43_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C44" HorizontalAlignment="Left" Height="80" Margin="303,296,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C44_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C45" HorizontalAlignment="Left" Height="80" Margin="388,296,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C45_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C51" HorizontalAlignment="Left" Height="80" Margin="48,381,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C51_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C52" HorizontalAlignment="Left" Height="80" Margin="133,381,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C52_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C53" HorizontalAlignment="Left" Height="80" Margin="218,381,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C53_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C54" HorizontalAlignment="Left" Height="80" Margin="303,381,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C54_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <ComboBox x:Name="C55" HorizontalAlignment="Left" Height="80" Margin="388,381,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.675,0.119" BorderBrush="White" FontSize="48" SelectionChanged="C55_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF4D0E0E" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ListBoxItem Content=" X" FontSize="20"/>
+            <ListBoxItem Content=" O" FontSize="20"/>
+        </ComboBox>
+        <Button x:Name="but" Content="Очистити поля" HorizontalAlignment="Left" Height="59" Margin="535,41,0,0" VerticalAlignment="Top" Width="217" Click="But_Click" Visibility="Visible" Background="Black" Foreground="White"/>
+
+    </Grid>
+</Window>
