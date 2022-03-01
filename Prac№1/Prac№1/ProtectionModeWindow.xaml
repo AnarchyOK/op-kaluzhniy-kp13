@@ -1,0 +1,91 @@
+﻿<Window x:Class="Prac_1.ProtectionModeWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="Вікно режиму перевірки клавіатурного почерку"
+Height="534.706" Width="457.999" FontSize="16"
+FontFamily="Courier New" FontWeight="Bold"
+WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF61D3CD">
+        <Label Content="РЕЖИМ ПЕРЕВІРКИ" HorizontalAlignment="Left"
+Margin="8,17,0,0" VerticalAlignment="Top" Height="33"
+Width="444" HorizontalContentAlignment="Center"
+FontSize="18"/>
+        <TextBlock x:Name="VerifField" HorizontalAlignment="Left"
+Margin="181,62,0,0" TextWrapping="Wrap"
+VerticalAlignment="Top" Height="28" Width="171"
+TextAlignment="Justify" Foreground="Red" Text="helloworld"/>
+        <TextBox x:Name="InputField" HorizontalAlignment="Left"
+Height="38" Margin="10,166,0,0" TextWrapping="Wrap"
+VerticalAlignment="Top" Width="423" Background="#FFE4DEE0"
+HorizontalContentAlignment="Stretch" TextChanged="InputField_TextChanged"  PreviewKeyDown="InputField_PreviewKeyDown"/>
+        <Label Content="Кількість введених символів:"
+HorizontalAlignment="Left" Margin="19,134,0,0"
+VerticalAlignment="Top" Height="32" Width="352"
+HorizontalContentAlignment="Left" FontSize="18"/>
+        <Button x:Name="CloseStudyMode" Content="Вийти з режиму для
+перевірки" HorizontalAlignment="Left" Margin="44,428,0,0"
+VerticalAlignment="Top" Width="352" Height="40"
+Click="CloseProtectionMode_Click"/>
+        <Label x:Name="SymbolCount" Content="0"
+HorizontalAlignment="Left" Margin="333,134,0,0"
+VerticalAlignment="Top" Height="32" Width="38" FontSize="18"/>
+        <ComboBox x:Name="CountProtection" HorizontalAlignment="Left"
+Margin="160,95,0,0" VerticalAlignment="Top" Width="56"
+SelectedIndex="0" Height="31">
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <Label Content="К-сть спроб:" HorizontalAlignment="Left"
+Margin="19,94,0,0" VerticalAlignment="Top" Height="32"
+Width="161" HorizontalContentAlignment="Left" FontSize="18"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left"
+Margin="19,55,0,0" VerticalAlignment="Top" Height="32"
+Width="176" HorizontalContentAlignment="Left" FontSize="18"/>
+        <Label Content="Статистичний аналіз" HorizontalAlignment="Left"
+            Margin="84,218,0,0" VerticalAlignment="Top" Height="33" 
+            Width="301" HorizontalContentAlignment="Center"
+            FontSize="20"/>
+        <Label x:Name="StatisticsBlock" HorizontalAlignment="Left"
+            Margin="238,295,0,0" VerticalAlignment="Top" Height="33"
+            Width="171" FontSize="18" Content="________"/>
+        <Label Content="P ідентифікації:" HorizontalAlignment="Left"
+            Margin="44,295,0,0" VerticalAlignment="Top" Height="33"
+            Width="189" HorizontalContentAlignment="Center"
+            FontSize="18"/>
+        <Label Content="Помилка 1-го роду:" HorizontalAlignment="Left"
+            Margin="44,335,0,0" VerticalAlignment="Top" Height="33"
+            Width="210" HorizontalContentAlignment="Center"
+            FontSize="18"/>
+        <Label Content="Помилка 2-го роду:" HorizontalAlignment="Left"
+            Margin="44,374,0,0" VerticalAlignment="Top" Height="33"
+            Width="210" HorizontalContentAlignment="Center"
+            FontSize="18"/>
+        <Label x:Name="P1Field" HorizontalAlignment="Left"
+            Margin="266,335,0,0" VerticalAlignment="Top" Height="33"
+            Width="143" FontSize="18" Content="_________"/>
+        <Label x:Name="P2Field" HorizontalAlignment="Left"
+            Margin="266,375,0,0" VerticalAlignment="Top" Height="32"
+            Width="143" FontSize="18" Content="_______"/>
+        <Label Content="Дисперсії вибірок" HorizontalAlignment="Left"
+            Margin="37,257,0,0" VerticalAlignment="Top" Height="33"
+            Width="214" HorizontalContentAlignment="Center"
+            FontSize="18" FontWeight="Bold"/>
+        <Label x:Name="DispField" HorizontalAlignment="Left"
+            Margin="268,257,0,0" VerticalAlignment="Top" Height="31"
+            Width="141" FontSize="18" Content="__________"/>
+        <CheckBox x:Name="User" Content="Легітимний" HorizontalAlignment="Left" Height="16" Margin="186,115,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="-0.605,1.059" FontSize="10">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2" ScaleY="2"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+    </Grid>
+</Window>
