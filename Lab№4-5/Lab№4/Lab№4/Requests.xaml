@@ -1,0 +1,98 @@
+﻿<Window x:Class="Lab4.Requests"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="Requests" Height="618" Width="749">
+    <Grid>
+        <Button x:Name="ToStartWindow" Content="Вийти" HorizontalAlignment="Left" Margin="10,531,0,0" VerticalAlignment="Top" Width="711" Height="34" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="ToStartWindow_Click"/>
+        <TabControl HorizontalAlignment="Center" Height="516" Margin="0,10,0,0" VerticalAlignment="Top" Width="729">
+            <TabItem Header="Запит 1" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid Margin="0,0,9,0">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Відомості про кінотеатри " VerticalAlignment="Top" Height="27" Width="669" TextAlignment="Justify"/>
+                    <DataGrid x:Name="CinemaData" HorizontalAlignment="Left" Height="432" Margin="10,37,0,0" VerticalAlignment="Top" Width="669" FontStyle="Normal" FontSize="16" FontFamily="Courier New" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Запит 2" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid Margin="0,0,-1,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="121*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Фільми у жанрі *Бойовик* та в обрану дату" VerticalAlignment="Top" Height="51" Width="491" TextAlignment="Justify" Grid.ColumnSpan="2"/>
+                    <DatePicker x:Name="dp" HorizontalAlignment="Center" Margin="0,51,0,0" VerticalAlignment="Top" Width="193"/>
+                    <DataGrid x:Name="ComediesData" HorizontalAlignment="Left" Height="368" Margin="10,101,0,0" VerticalAlignment="Top" Width="704" FontSize="16" FontFamily="Courier New" FontStyle="Normal" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                    <Button x:Name="Go3" Content="Знайти" HorizontalAlignment="Left" Margin="44,53,0,0" VerticalAlignment="Top" Width="178" Height="29" Click="Go3_Click" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Запит 3" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid Margin="0,0,-5,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="63*"/>
+                        <ColumnDefinition Width="1048*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="491" TextAlignment="Justify" Grid.ColumnSpan="2" Text="Ціни на кваитки у обраний період часу"/>
+                    <DataGrid x:Name="CostData" HorizontalAlignment="Left" Height="340" Margin="10,129,0,0" VerticalAlignment="Top" Width="692" Grid.ColumnSpan="2" FontFamily="Courier New" FontStyle="Italic" FontSize="16" FontWeight="Bold"/>
+                    <ComboBox x:Name="TheatersCBox" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="292" Grid.ColumnSpan="2" Height="42"/>
+                    <DatePicker x:Name="PData" HorizontalAlignment="Left" Margin="16,95,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1" RenderTransformOrigin="0.635,0.621"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="14,98,0,0" TextWrapping="Wrap" Text="Від:" VerticalAlignment="Top" Height="24" Width="52" TextAlignment="Justify" Grid.ColumnSpan="2"/>
+                    <DatePicker x:Name="LData" HorizontalAlignment="Left" Margin="258.2,95,0,0" VerticalAlignment="Top" Width="178" Grid.Column="1"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="214,98,0,0" TextWrapping="Wrap" Text="До:" VerticalAlignment="Top" Height="24" Width="45" TextAlignment="Justify" Grid.Column="1"/>
+                    <Button x:Name="Go5" Content="Знайти" HorizontalAlignment="Left" Margin="258,48,0,0" VerticalAlignment="Top" Width="178" Height="42" Click="Go5_Click" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Запит 4" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid Margin="0,0,-1,0">
+                    <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="540" TextAlignment="Justify" Text="Фільми кивтки яких коштують менше 100 гривень, але більше за 50"/>
+                    <DataGrid x:Name="c100_50" HorizontalAlignment="Center" Height="413" Margin="0,66,0,0" VerticalAlignment="Top" Width="704" FontFamily="Courier New" FontStyle="Italic" FontSize="16" FontWeight="Bold"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Запит 5" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid Margin="0,0,33,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="64*"/>
+                        <ColumnDefinition Width="491*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="29,10,0,0" TextWrapping="Wrap" Text="Фільми за актором" VerticalAlignment="Top" Height="27" Width="637" TextAlignment="Justify" Grid.ColumnSpan="2"/>
+                    <DataGrid x:Name="Theater_P_Actor" HorizontalAlignment="Left" Height="391" Margin="29,78,0,0" VerticalAlignment="Top" Width="637" FontSize="16" FontStyle="Italic" FontFamily="Courier New" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="ActorsCBox" HorizontalAlignment="Left" Margin="29,37,0,0" VerticalAlignment="Top" Width="563" Grid.ColumnSpan="2" SelectionChanged="Go2_Click"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Запит 6" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="191*"/>
+                        <ColumnDefinition Width="919*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="38,10,0,0" TextWrapping="Wrap" Text="Фільми які отримали нагороду" VerticalAlignment="Top" Height="51" Width="491" TextAlignment="Justify" Grid.ColumnSpan="2"/>
+                    <DataGrid x:Name="FilmsReward" HorizontalAlignment="Left" Height="403" Margin="38,66,0,0" VerticalAlignment="Top" Width="646" FontSize="16" FontWeight="Bold" FontFamily="Courier New" Grid.ColumnSpan="2"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Запит 7" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid>
+                    <DataGrid x:Name="FilmsData" HorizontalAlignment="Center" Height="408" Margin="0,61,0,0" VerticalAlignment="Top" Width="703"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="595" TextAlignment="Justify" Text="Фільми по районах Києва"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Запит 8" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="68*"/>
+                        <ColumnDefinition Width="195*"/>
+                        <ColumnDefinition Width="99*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Left" Margin="35,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" Width="572" TextAlignment="Justify" Grid.ColumnSpan="3" Text="Загальний прибуток кінотеатрів"/>
+                    <DataGrid x:Name="Money" HorizontalAlignment="Left" Height="413" Margin="10,66,0,0" VerticalAlignment="Top" Width="703" FontFamily="Courier New" FontStyle="Italic" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="3"/>
+                </Grid>
+
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

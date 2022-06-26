@@ -1,0 +1,15 @@
+﻿<Window x:Class="Prac03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac03"
+        mc:Ignorable="d"
+        Title="Головне меню" Height="233" Width="623" ResizeMode="CanMinimize" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button Name="AdminBtn" Content="Увійти(Адміністратор)" HorizontalAlignment="Left" Margin="34,43,0,0" VerticalAlignment="Top" Height="50" Width="250" Click="AdminBtn_Click"/>
+        <Button Name="UserBtn" Content="Увійти(Користувач)" HorizontalAlignment="Left" Margin="312,43,0,0" VerticalAlignment="Top" Height="50" Width="250" Click="UserBtn_Click"/>
+        <Button Name="ExitBtn" Content="Вийти" HorizontalAlignment="Left" Margin="175,112,0,0" VerticalAlignment="Top" Height="50" Width="250" Click="ExitBtn_Click"/>
+
+    </Grid>
+</Window>

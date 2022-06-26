@@ -1,0 +1,97 @@
+﻿<Window x:Class="Lab4.EditSome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="Інше" Height="646" Width="925">
+    <Grid>
+        <Button x:Name="ToStartWindow" Content="Вийти" HorizontalAlignment="Left" Margin="698,544,0,0" VerticalAlignment="Top" Width="202" Height="34" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="ToStartWindow_Click"/>
+        <TabControl HorizontalAlignment="Left" Height="516" Margin="10,10,0,0" VerticalAlignment="Top" Width="890">
+            <TabItem Header="Додати актора" FontSize="20" FontFamily="Arial" FontStyle="Normal" Height="28.8" Background="White" BorderBrush="Black">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="237*"/>
+                        <ColumnDefinition Width="647*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="442" Margin="129,12,0,0" VerticalAlignment="Top" Width="493" SelectionChanged="DataGrid1_SelectionChanged" Grid.Column="1"/>
+                    <Label Content="Актор:" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="88" Height="26"/>
+                    <ComboBox x:Name="AI" HorizontalAlignment="Left" Margin="98,194,0,0" VerticalAlignment="Top" Width="244" Height="26" Grid.ColumnSpan="2"/>
+                    <Button x:Name="AddBtn" Content="Додати" HorizontalAlignment="Left" Margin="10,317,0,0" VerticalAlignment="Top" Width="332" Height="65" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="AddBtn_Click" Grid.ColumnSpan="2"/>
+                    <Button x:Name="RemoveBtn" Content="Видалити" HorizontalAlignment="Left" Margin="10,389,0,0" VerticalAlignment="Top" Width="332" Height="65" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="RemoveBtn_Click" Grid.ColumnSpan="2"/>
+                    <Label Content="Фільм:" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="88" Height="26"/>
+                    <ComboBox x:Name="FI" HorizontalAlignment="Left" Margin="98,235,0,0" VerticalAlignment="Top" Width="244" Height="26" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Додати фільм" FontSize="20" FontFamily="Arial" Background="White" FontStyle="Normal" Height="28.8" BorderBrush="Black">
+                <Grid>
+                    <Label Content="Фільм:" HorizontalAlignment="Left" Margin="351,332,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="76" Height="29"/>
+                    <ComboBox x:Name="FI3" HorizontalAlignment="Left" Margin="452,334,0,0" VerticalAlignment="Top" Width="408" Height="28"/>
+                    <TextBox x:Name="costField" HorizontalAlignment="Left" MaxLength="5" Height="30" Margin="172,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="125" FontSize="20" TextAlignment="Center" FontFamily="Courier New" FontWeight="Bold"/>
+                    <Label Content="Ціна квтика:" HorizontalAlignment="Left" Margin="12,332,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="146" Height="30"/>
+                    <Label Content="Кінотеатр:" HorizontalAlignment="Left" Margin="352,372,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="90" Height="30"/>
+                    <ComboBox x:Name="TI" HorizontalAlignment="Left" Margin="452,373,0,0" VerticalAlignment="Top" Width="408" Height="30"/>
+                    <Label Content="Дата:" HorizontalAlignment="Left" Margin="12,30,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="76" Height="29"/>
+                    <Calendar x:Name="calendar1" HorizontalAlignment="Left" Margin="12,69,0,0" VerticalAlignment="Top" Width="285" SelectedDatesChanged="Calendar_SelectedDatesChanged" Height="193"/>
+                    <Label Content="Час початку:" HorizontalAlignment="Left" Margin="12,267,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="160" Height="30"/>
+                    <Label Content="Час закінчення:" HorizontalAlignment="Left" Margin="12,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="160" Height="29"/>
+                    <DataGrid x:Name="DataGrid3" HorizontalAlignment="Left" Height="288" Margin="303,24,0,0" VerticalAlignment="Top" Width="557" RenderTransformOrigin="-1.214,2.983" SelectionChanged="DataGrid3_SelectionChanged"/>
+                    <Button x:Name="AddBtn3" Content="Додати" HorizontalAlignment="Left" Margin="12,388,0,0" VerticalAlignment="Top" Width="285" Height="76" Foreground="#FF280E09" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="AddBtn3_Click"/>
+                    <Button x:Name="RemoveBtn3" Content="Видалити" HorizontalAlignment="Left" Margin="558,431,0,0" VerticalAlignment="Top" Width="302" Height="34" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="RemoveBtn3_Click"/>
+                    <Label x:Name="DataLabel" Content="01.09.2022" HorizontalAlignment="Left" Margin="99,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="16" Width="198" Height="30"/>
+                    <TextBox x:Name="startTimeFileld" HorizontalAlignment="Left" Height="25" Margin="172,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="18" FontFamily="Courier New" FontWeight="Bold"/>
+                    <TextBox x:Name="finishTimeFileld" HorizontalAlignment="Left" Height="25" Margin="172,305,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="18" FontFamily="Courier New" FontWeight="Bold"/>
+                    <Label Content="ID фільму:" HorizontalAlignment="Left" Margin="318,435,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Italic" FontFamily="Georgia" FontSize="16" Width="124" Height="30"/>
+                    <TextBox x:Name="IDField" HorizontalAlignment="Left" MaxLength="5" Height="28" Margin="427,436,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="108" FontSize="20" TextAlignment="Center" FontFamily="Courier New" FontWeight="Bold" RenderTransformOrigin="-0.767,2.932"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Додати жанр" FontSize="20" FontFamily="Arial" Background="White" FontStyle="Normal" Height="28.8" BorderBrush="Black">
+                <Grid>
+                    <ComboBox x:Name="GI" HorizontalAlignment="Left" Margin="93,274,0,0" VerticalAlignment="Top" Width="211" Height="45"/>
+                    <Label Content="Фільм:" HorizontalAlignment="Left" Margin="12,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="77" Height="45"/>
+                    <Label Content="Жанр:" HorizontalAlignment="Left" Margin="13,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="75" Height="45"/>
+                    <ComboBox x:Name="FI2" HorizontalAlignment="Left" Margin="91,221,0,0" VerticalAlignment="Top" Width="213" Height="44"/>
+                    <DataGrid x:Name="DataGrid2" HorizontalAlignment="Left" Height="454" Margin="328,15,0,0" VerticalAlignment="Top" Width="546" SelectionChanged="DataGrid2_SelectionChanged"/>
+                    <Button x:Name="AddBtn2" Content="Додати" HorizontalAlignment="Left" Margin="10,348,0,0" VerticalAlignment="Top" Width="294" Height="55" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="AddBtn2_Click"/>
+                    <Button x:Name="RemoveBtn2" Content="Видалити" HorizontalAlignment="Left" Margin="10,408,0,0" VerticalAlignment="Top" Width="294" Height="61" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="RemoveBtn2_Click"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Додати сеанс" FontSize="20" FontFamily="Arial" Background="White" FontStyle="Normal" Height="28.8" BorderBrush="Black">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="59*"/>
+                        <ColumnDefinition Width="140*"/>
+                        <ColumnDefinition Width="686*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Кінотеатр:" HorizontalAlignment="Left" Margin="8,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="110" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="TI2" HorizontalAlignment="Left" Margin="59,0,0,0" VerticalAlignment="Center" Width="200" Height="33" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <Label Content="Номер сеансу:" HorizontalAlignment="Left" Margin="8,274,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="146" Grid.ColumnSpan="2"/>
+                    <ComboBox x:Name="TC" HorizontalAlignment="Left" Margin="95,277,0,0" VerticalAlignment="Top" Width="164" Height="30" Grid.Column="1" Grid.ColumnSpan="2"/>
+                    <DataGrid x:Name="DataGrid5" HorizontalAlignment="Left" Height="459" Margin="138,0,0,0" VerticalAlignment="Center" Width="537" SelectionChanged="DataGrid5_SelectionChanged" Grid.Column="2"/>
+                    <Button x:Name="AddBtn5" Content="Додати" HorizontalAlignment="Left" Margin="17,326,0,0" VerticalAlignment="Top" Width="276" Height="54" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="AddBtn5_Click" Grid.ColumnSpan="3"/>
+                    <Button x:Name="RemoveBtn5" Content="Видалити" HorizontalAlignment="Left" Margin="17,398,0,0" VerticalAlignment="Top" Width="276" Height="52" Foreground="#FF280E09" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="RemoveBtn5_Click" Grid.ColumnSpan="3"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Додати знімальну команду" FontSize="20" FontFamily="Arial" Background="White" FontStyle="Normal" Height="28.8" BorderBrush="Black">
+                <Grid Margin="0,0,0,-9">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="478*"/>
+                        <ColumnDefinition Width="407*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="FI4" HorizontalAlignment="Left" Margin="107,270,0,0" VerticalAlignment="Top" Width="257" Height="42"/>
+                    <Label Content="Продюсер:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="112"/>
+                    <Label Content="Фільм:" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.023,2.515" FontStyle="Normal" FontFamily="Arial" FontSize="20" Width="79"/>
+                    <ComboBox x:Name="PI" HorizontalAlignment="Left" Margin="137,0,0,0" VerticalAlignment="Center" Width="227" Height="42"/>
+                    <DataGrid x:Name="DataGrid4" HorizontalAlignment="Left" Height="468" Margin="391,0,0,0" VerticalAlignment="Center" Width="483" SelectionChanged="DataGrid4_SelectionChanged" Grid.ColumnSpan="2"/>
+                    <Button x:Name="AddBtn4" Content="Додати" HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Width="354" Height="52" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="AddBtn4_Click"/>
+                    <Button x:Name="RemoveBtn4" Content="Видалити" HorizontalAlignment="Left" Margin="10,415,0,0" VerticalAlignment="Top" Width="354" Height="51" Foreground="#FF280E09" FontSize="24" FontFamily="Arial" FontWeight="Bold" Click="RemoveBtn4_Click"/>
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

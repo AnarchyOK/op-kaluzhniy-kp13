@@ -1,0 +1,32 @@
+C:\Users\Vlad\source\repos\Prac02\Prac02\bin\Debug\Prac02.exe.config
+C:\Users\Vlad\source\repos\Prac02\Prac02\bin\Debug\Prac02.exe
+C:\Users\Vlad\source\repos\Prac02\Prac02\bin\Debug\Prac02.pdb
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.csproj.AssemblyReference.cache
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.csproj.SuggestedBindingRedirects.cache
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\MainWindow.g.cs
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\App.g.cs
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02_MarkupCompile.cache
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02_MarkupCompile.lref
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\MainWindow.baml
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.g.resources
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.Properties.Resources.resources
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.csproj.GenerateResource.cache
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.exe
+C:\Users\Vlad\source\repos\Prac02\Prac02\obj\Debug\Prac02.pdb
+D:\Учеба\Основи програмування\Prac02\Prac02\bin\Debug\Prac02.exe.config
+D:\Учеба\Основи програмування\Prac02\Prac02\bin\Debug\Prac02.exe
+D:\Учеба\Основи програмування\Prac02\Prac02\bin\Debug\Prac02.pdb
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.csproj.AssemblyReference.cache
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.csproj.SuggestedBindingRedirects.cache
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\MainWindow.g.cs
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\App.g.cs
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02_MarkupCompile.cache
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02_MarkupCompile.lref
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\MainWindow.baml
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.g.resources
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.Properties.Resources.resources
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.csproj.GenerateResource.cache
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.csproj.CoreCompileInputs.cache
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.exe
+D:\Учеба\Основи програмування\Prac02\Prac02\obj\Debug\Prac02.pdb

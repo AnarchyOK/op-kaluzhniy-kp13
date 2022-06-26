@@ -1,0 +1,19 @@
+﻿<Window x:Class="Prac03.UserToolsWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac03"
+        mc:Ignorable="d"
+        Title="Користувач" Height="339" Width="400" ResizeMode="CanMinimize" WindowStyle="ToolWindow" Closed="Window_Closed" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFA5A5A5">
+        <Label Content="Змінити Пароль" HorizontalAlignment="Left" Margin="98,28,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox Name="OldPassTB" HorizontalAlignment="Left" Margin="144,75,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Height="34" FontSize="20"/>
+        <TextBox Name="NewPassTB" HorizontalAlignment="Left" Margin="144,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Height="34" FontSize="20" TextChanged="TB_TextChanged"/>
+        <TextBox Name="RepeatNewPassTB" HorizontalAlignment="Left" Margin="144,153,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Height="34" FontSize="20" TextChanged="TB_TextChanged"/>
+        <Label Content="Старий Пароль" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Новий Пароль" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Поаторіть Пароль" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top"/>
+        <Button Name="ChangePassBtn" Content="Змінити" HorizontalAlignment="Left" Margin="10,217,0,0" VerticalAlignment="Top" Width="363" Height="44" IsEnabled="False" Click="ChangePassBtn_Click"/>
+    </Grid>
+</Window>
